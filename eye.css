@@ -1,0 +1,127 @@
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    background: linear-gradient(to right, rgb(124, 35, 124), rgb(243, 143, 160));
+    color: white;
+    padding:1%;
+  }
+  
+  .navbar a {
+    padding:1%;
+    color: white;
+    text-decoration: none;
+  }
+.int{
+  text-align: center;
+  color: rgb(124, 35, 124) ;
+}
+  @media screen and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      display: none;
+    }
+  
+    .navbar .hamburger {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .navbar .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .navbar .menu {
+      display: none;
+    }
+  
+    .navbar .menu.active {
+      display: block;
+    }
+  }
+  
+  
+.flex{
+    display: flex;
+    margin-left: 2em;
+    
+
+}
+.flexx{
+    margin-left: 10em;
+    display: flex;
+}
+.purple{
+    color: blueviolet;
+    
+}
+.lash{
+    text-align: center;
+   
+}
+.liner{
+    display: flex;
+    gap: 5em;
+    margin-left: 6em;
+}
+.img2{
+    width: 300px;
+}
+.l{
+    text-align: center;
+    background-color:rgb(70, 20, 70);
+    border-radius: 5px;
+    /* width: 90px; */
+   
+    
+}
+.l a{
+    color: white;
+    text-decoration: none;
+   
+}
+.shadow{
+    display: flex;
+    margin-left: 8em;
+    gap: 9em;
+    
+}
+@media only screen and (max-width: 600px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+.flexx{
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.liner{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-left: 2em;
+}
+
+}

@@ -1,0 +1,179 @@
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    background: linear-gradient(to right, rgb(124, 35, 124), rgb(243, 143, 160));
+    color: white;
+    padding:1%;
+  }
+  
+  .navbar a {
+    padding:1%;
+    color: white;
+    text-decoration: none;
+  }
+.int{
+  text-align: center;
+  color: rgb(124, 35, 124) ;
+}
+  @media screen and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      display: none;
+    }
+  
+    .navbar .hamburger {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .navbar .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .navbar .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .navbar .menu {
+      display: none;
+    }
+  
+    .navbar .menu.active {
+      display: block;
+    }
+  }
+  
+  
+
+
+
+.flex{
+    display: flex;
+    gap: 4em;
+    margin-left: 6em;
+    border-radius: 10px;
+}
+.n{
+    border-radius: 5px;
+}
+.pink{
+color: palevioletred;
+text-align: center;
+
+}
+.pink a{
+    text-decoration: none;
+}
+.j{
+    background-color:rgb(70, 20, 70);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.full{
+    width: 190vh;
+    
+}
+.ground{
+    background-image: url(/image/care5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70vh ;
+   
+}
+.ground h1{
+    color: white;
+    margin-left: 3em;
+    padding-top: 2em;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.butt{
+    background-color:rgb(70, 20, 70);
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+   margin-left: 52em;
+   
+}
+.butt a{
+    text-decoration: none;
+    color: white;
+    padding-top: 3em;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+
+
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-left: 1em;
+        border-radius: 10px;
+    }
+
+.butt{
+    background-color:rgb(70, 20, 70);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+   margin-left: 02em;
+   
+}
+
+.ground{
+    background-image: url(/image/care5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:20vh ;
+    width: 34vh;
+   
+}
+.j{
+    background-color:rgb(70, 20, 70);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+}
+
+.ground h1{
+    color: white;
+    margin-left: 0em;
+    padding-top: 2em;
+    /* font-weight: bolder; */
+    font-size: 20px;
+}
+.pink{
+    color: palevioletred;
+    text-align: center;
+    text-align: start;
+    
+    }
+    .pink a{
+        text-decoration: none;
+    }
+    
+}
